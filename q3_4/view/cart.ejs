@@ -1,0 +1,21 @@
+
+      <%- include('./template.ejs') %>
+      
+        <caption>Shoppig cart</caption>
+        <tr>
+            <th>Name</th>
+            <th>quantity</th>
+            <th>Price</th>
+        </tr>
+        
+        <% for(let item of shoppingCartList){ %>
+        <tr>
+            <td><%= item.name %></td>
+            <td><%= item.quantity %></td>
+            <td><%= item.price %></td>
+        </tr>
+        <% } %> 
+    </table>
+    <div><a href='/'>Add more Items to Cart</a></div>
+</body>
+</html>
